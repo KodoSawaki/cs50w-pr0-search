@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
+        <link rel="stylesheet" href="static/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Advanced Search</title>
     </head>
+
     <body>
-        <form action="https://google.com/search">
+        <div class="links-row">
+            <a href="index.html">Search</a>
+        </div>
+        <div class="appbar">
+            <label>Advanced Search</label>
+        </div>
+        <form class="adv-form" action="https://google.com/search">
+            <span class="header-1-span">Find pages with...</span>
+            <span class="header-2-span">&nbsp;</span>
+            <span class="header-3-span">To do this in the search box.</span>
+
             <label for="as_q">all these words:</label>
             <input type="text" name="as_q">
+            <span class="col-3-span">Type the important words: tri-colour rat terrier</span>
+
             <label for="as_epq">this exact word or phrase:</label>
             <input type="text" name="as_epq">
-            <label for="">any of these words:</label>
+            <span class="col-3-span">Put exact words in quotes: "rat terrier"</span>
+
+            <label for="as_oq">any of these words:</label>
             <input type="text" name="as_oq">
-            <label for="">none of these words:</label>            
+            <span class="col-3-span">Type OR between all the words you want: miniature OR standard</span>
+
+            <label for="as_eq">none of these words:</label>
             <input type="text" name="as_eq">
-            <input type="submit" value="Advanced Search">
+            <span class="col-3-span">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</span>
+
+            <input class="adv-btn" type="submit" value="Advanced Search">
         </form>
     </body>
+
 </html>

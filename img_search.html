@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
+        <link rel="stylesheet" href="static/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Image Search</title>
     </head>
+
     <body>
+        <div class="links-row">
+            <a href="index.html">Search</a>
+        </div>
+        <div class="name-row">
+            <img alt="В преддверии Нового года" height="180"
+                src="static/img/december-holidays-days-2-30-6753651837108830.3-law.gif" title="В преддверии Нового года"
+                width="500">
+        </div>
         <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="text" name="tbm" value="isch" hidden="true">
-            <input type="submit" value="Google Search">
+            <div class="search-row">
+                <input class="search-field" type="text" name="q">
+                <input type="text" name="tbm" value="isch" hidden="true">
+            </div>
+            <div class="btn-row">
+                <input class="search-btn" type="submit" value="Google Search">
+            </div>
         </form>
     </body>
+
 </html>
